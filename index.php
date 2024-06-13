@@ -1,6 +1,6 @@
 <?php
 
-Kirby::plugin('vv/block-separator', [
+Kirby::plugin('vv/layout', [
   'snippets' => [
     'layout' => __DIR__ . '/snippets/layout.php',
   ],
