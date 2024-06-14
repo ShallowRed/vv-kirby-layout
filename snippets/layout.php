@@ -1,10 +1,10 @@
-<div class="layout w-full">
+<div class="k-layout w-full">
   <?php foreach ($layouts as $layout) : ?>
   <section
     <?php
     echo attr([
       'class' => A::join([
-        'row mt-12 md:mt-8 first:mt-0 grid grid-cols-6 gap-12 md:gap-20',
+        'k-row',
         $layout->class()
       ], ' '),
     ]);
@@ -14,7 +14,7 @@
       <?php
       echo attr([
         'class' => A::join([
-          'column col-span-6',
+          'k-column col-span-6',
           ('md:col-span-' . $column->span(6)),
         ], ' '),
       ]);
@@ -24,7 +24,7 @@
         <?php
         echo attr([
           'class' => A::join([
-            'k-block mt-4 first:mt-0',
+            'k-block',
             $block->class()
           ], ' '),
         ]);
