@@ -1,4 +1,4 @@
-<div class="k-layout w-full">
+<div class="k-layout">
   <?php foreach ($layouts as $layout) : ?>
   <section
     <?php
@@ -14,8 +14,8 @@
       <?php
       echo attr([
         'class' => A::join([
-          'k-column col-span-6',
-          ('md:col-span-' . $column->span(6)),
+          'k-column',
+          ('k-column--span-' . $column->span(6)),
         ], ' '),
       ]);
       ?>>
