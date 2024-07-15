@@ -1,8 +1,10 @@
 <div class="k-layout">
+
   <?php foreach ($layouts as $layout) : ?>
   <section
     <?php
     echo attr([
+      'id' => $layout->attrs()->id(),
       'class' => A::join([
         'k-row',
         $layout->class()
